@@ -1,0 +1,34 @@
+<section class="mt-12">
+    <div class="container mx-auto">
+        <div class="relative py-2 md:py-12">
+            <div
+                class="container mx-auto bg-gradient-to-tr from-zinc-900 via-cyan-900 to-zinc-900 rounded-2xl shadow-md z-0">
+                <div class="row">
+                    <div class="flex-col flex md:flex-row justify-between items-center">
+                        <div class="mx-auto p-3 md:p-12">
+                            <h3
+                                class="text-2xl md:text-4xl max-w-2xl text-center md:text-left font-bold tracking-tight text-white">
+                                Ready to cut your costs? <br>
+                                <span class="md:text-3xl  text-center md:text-left font-bold tracking-tight text-white text-xl"> Outsource your cab disptaching today!</span>
+
+                            </h3>
+                            <p
+                                class="max-w-2xl mt-4 mb-8 mx-auto text-xl text-center md:text-left f md:text-xl tracking-tight font-semibold text-stone-300">
+                                Book your 2 Days FREE TRIAL today. Completely zero-risk. Unmatched customer service.
+                            </p>
+                            <a href="/book-free-trial/"
+                                class="block px-5 py-3 w-64 mt-2 text-xl text-center text-gray-800 font-bold border border-amber-500 rounded-lg focus:ring focus:ring-amber-300 bg-primary hover:bg-yellow-500 hover:text-white transition ease-in-out duration-200">
+                                BOOK A FREE TRIAL</a>
+                        </div>
+                        <div class="sm:mx-auto sm:flex sm:max-w-lg">
+                            {{ with resources.Get "/images/cab-connects-taxi.png" }}
+                            {{ $together := .RelPermalink }}
+                            <img src="{{$together}}" class="w-full z-40 overflow-vissible" alt="Cab Connects the best Cab Dispatcher team in UK">
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
