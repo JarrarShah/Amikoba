@@ -1,5 +1,7 @@
-<title>{{ if .IsHome }} Cab Connects | UK Taxi Dispatch Call Center {{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+<title> {{ .Title }} - {{ .Site.Title }}
+</title>
+<meta name="description"
+    content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
 <link rel="canonical" href="{{ .Permalink }}" />
 <meta name="description"
     content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />

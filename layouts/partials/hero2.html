@@ -14,7 +14,7 @@
         {{ end }}
       <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
         <div class="text-center text-white">
-          <h1 class="text-4xl font-bold mb-4">Video Editing Services</h1>
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">Video Editing Services</h1>
           <p class="mb-6 pb-2 md:pb-6">Bring your vision to life with our expert video editing services.</p>
           <a href="#quote" class="bg-primary hover:bg-green-600 text-white py-4 px-6 rounded-lg">Get a Quote</a>
         </div>
@@ -35,8 +35,8 @@
         {{ end }}      
         <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
         <div class="text-center text-white">
-          <h2 class="text-4xl font-bold mb-4">Premium Graphic Design Services</h2>
-          <p class="mb-6 pb-2 md:pb-6">Bring your vision to life with our custom graphic design services—creative, bold, and designed to make an impact. Let us craft visuals that elevate your brand.</p>
+          <h2 class="text-4xl md:text-6xl max-w-4xl mx-auto font-bold mb-4">Premium <br> Graphic Design Services</h2>
+          <p class="mb-6 pb-2 md:pb-6  max-w-4xl">Bring your vision to life with our custom graphic design services—creative, bold, and designed to make an impact. Let us craft visuals that elevate your brand.</p>
           <a href="#quote" class="bg-primary hover:bg-green-600 text-white py-4 px-6 rounded-lg">Get a Quote</a>
         </div>
       </div>
@@ -56,8 +56,8 @@
         {{ end }}
       <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
         <div class="text-center text-white">
-          <h3 class="text-4xl font-bold mb-4">Website Design</h3>
-          <p class="mb-6 pb-2 md:pb-6">Transform your online presence with stunning, user-friendly website design tailored to your brand. We create websites that not only look great but deliver results.</p>
+          <h3 class="text-4xl md:text-6xl font-bold mb-4">Website Design</h3>
+          <p class="mb-6 pb-2 md:pb-6   max-w-4xl">Transform your online presence with stunning, user-friendly website design tailored to your brand. We create websites that not only look great but deliver results.</p>
           <a href="#quote" class="bg-primary hover:bg-green-600 text-white py-4 px-6 rounded-lg">Get a Quote</a>
         </div>
       </div>
@@ -65,17 +65,26 @@
   </div>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      new KeenSlider(".keen-slider", {
-        loop: true,
-        slidesPerView: 1,
-        mode: "snap",
-        controls: true,
-        breakpoints: {
-          "(min-width: 768px)": {
+        var slider = new KeenSlider(".keen-slider", {
+            loop: true,
             slidesPerView: 1,
-          },
-        },
-      });
+            mode: "snap",
+            controls: true,
+            breakpoints: {
+                "(min-width: 768px)": {
+                    slidesPerView: 1,
+                },
+            },
+        });
+
+        function autoplay() {
+            setInterval(() => {
+                slider.next();
+            }, 3000); // Change slide every 3 seconds
+        }
+
+        autoplay();
     });
-  </script>
+</script>
+
     
