@@ -1,5 +1,5 @@
-baseURL = "https://cab-connects.com"
-title = "Cab Connects"
+baseURL = ""
+title = ""
 
 languageCode = "en-us"
 DefaultContentLanguage = "en"
@@ -36,7 +36,7 @@ logo = ""
 keywords = ""
 home = "Home"
 # Google Analitycs
-googleAnalitycsID = "GTM-N569CMSW" # Your ID
+googleAnalitycsID = "" # Your ID
 
 [markup]
   defaultMarkdownHandler = "goldmark"
@@ -77,7 +77,7 @@ googleAnalitycsID = "GTM-N569CMSW" # Your ID
 
 
 [taxonomies]
-category = "Categories"
+category = "categories"
 tag = "Tags"
 
 [privacy]
