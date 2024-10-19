@@ -13,7 +13,7 @@
 {{ partial "meta" . }}
 
 <!-- Google Tag Manager -->
-<script>(function (w, d, s, l, i) {
+<!-- <script>(function (w, d, s, l, i) {
     w[l] = w[l] || []; w[l].push({
       'gtm.start':
         new Date().getTime(), event: 'gtm.js'
@@ -21,7 +21,7 @@
       j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
   })(window, document, 'script', 'dataLayer', 'GTM-N569CMSW');
-</script>
+</script> -->
 <!-- End Google Tag Manager -->
 
 {{ $styles := resources.Get "/css/style.css" | postCSS }}
@@ -31,6 +31,13 @@
 {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
 {{ end }}
+
+<!-- Keen Slider CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css" />
+
+<!-- Keen Slider JS -->
+<script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
+
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

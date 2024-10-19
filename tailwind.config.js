@@ -1,7 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  content: ['./layouts/**/*.html', './content/**/*.md'],
+  content: ['./layouts/**/*.html', './content/**/*.md', './assets/**/*.{html,js}'],
   darkMode: 'class',
   theme: {
     extend: {
@@ -13,16 +13,17 @@ module.exports = {
         padding: '2rem',
       },
       colors: {
-        primary: '#FEC104',
+        primary: '#0bd37d',
         secondary: '#FFFFFF',
         neutral: '#306BAC',
-        dark: '#232323',
+        dark: '#0c0f16',
         darksecondary: '#56445D',
         hoverprimary: '#E45310',
         green: '#56E39F',
         blue: "#0A1045",
         offwhite: "#F8FFE5",
-        lightgreen: "#06D6A0"
+        lightgreen: "#06D6A0",
+        nav: '#11141b',
       },
       lineHeight: {
         'extra-loose': '2.5',

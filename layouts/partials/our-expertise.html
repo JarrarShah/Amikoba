@@ -1,0 +1,78 @@
+<section x-data="{
+    bars: [
+      { label: 'Graphic Design', value: 96, width: 0 },
+      { label: 'Web Design', value: 86, width: 0 },
+      { label: 'Video Editing', value: 89, width: 0 },
+      { label: 'UI/UX Design', value: 98, width: 0 },
+    ],
+    animateBars() {
+      this.bars.forEach(bar => {
+        let currentWidth = 0;
+        let interval = setInterval(() => {
+          if (currentWidth >= bar.value) {
+            clearInterval(interval);
+          } else {
+            currentWidth++;
+            bar.width = currentWidth;
+          }
+        }, 15);
+      });
+    }
+  }"
+  x-init="() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateBars();
+          observer.disconnect();
+        }
+      });
+    });
+    observer.observe($el);
+  }" 
+  class="bg-gray-900 text-white py-16"
+>
+<div class="container mx-auto px-4">
+  <div class="flex flex-wrap">
+    <!-- Left Content -->
+    <div class="w-full lg:w-1/2 mb-8 lg:mb-0 pr-0 md:pr-20">
+      <h2 class="text-green-500 font-semibold text-sm mb-2">OUR EXPERTISE</h2>
+      <h1 class="text-4xl font-bold mb-4">Growing businesses through digital solutions</h1>
+      <p class="mb-6 text-gray-300">
+        With expertise spanning across web design, mobile app development, UX/UI design, and brand identity, 
+        we blend creativity with cutting-edge technology to deliver tailored solutions that resonate with your audience.
+      </p>
+
+      <!-- Skills with Progress Bars -->
+      <template x-for="bar in bars" :key="bar.label">
+        <div class="mb-4">
+          <div class="flex justify-between items-center mb-1">
+            <span x-text="bar.label"></span>
+            <span class="text-green-500" x-text="`${bar.value}%`"></span>
+          </div>
+          <div class="w-full bg-gray-700 rounded-full h-2">
+            <!-- Smoothly animated progress bar width -->
+            <div class="bg-white h-2 rounded-full" 
+                 :style="`width: ${bar.width}%`" 
+                 style="transition: width 0.5s ease;">
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+
+    <!-- Right Content (Images) -->
+    <div class="w-full lg:w-1/2 grid grid-cols-2 gap-4">
+      <div class="col-span-2">
+        <img src="https://via.placeholder.com/400x250" alt="Main Image" class="rounded-lg w-full">
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/200x200" alt="Image 1" class="rounded-lg w-full">
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/200x200" alt="Image 2" class="rounded-lg w-full">
+      </div>
+    </div>
+  </div>
+</div>
+</section>
