@@ -10,7 +10,7 @@ images: ["images/og-cabconnects.png"]
 
 ### 1. INTRODUCTION  
 
-This privacy notice provides you with details of how we collect and process your personal data through your use of our site [www.cab-connects.com](/). By providing us with your data, you warrant to us that you are over 13 years of age.
+This privacy notice provides you with details of how we collect and process your personal data through your use of our site [www.amikoba.com](/). By providing us with your data, you warrant to us that you are over 13 years of age.
 
 iMobilize Ltd/Amikoba ltd [is/am/are] the data controller and we are responsible for your personal data (referred to as “we”, “us” or “our” in this privacy notice)
 

@@ -1,66 +1,117 @@
 <div class="bg-dark text-white py-16 px-4 md:px-12" id="aboutus">
-    <!-- Container for the entire section -->
-    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-      
-      <!-- Left: Video Section -->
+  <!-- Container for the entire section -->
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
 
-      <div class="flex justify-center">
-        <div class="relative  w-full max-w-4xl xl:max-w-6xl lg:w-screen">
-          <script src="https://fast.wistia.com/embed/medias/cmx6chswi0.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_cmx6chswi0 seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/cmx6chswi0/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
-        </div>
-    </div>
+    <!-- Left: Video Section -->
 
-      
-      <!-- Right: About Us Section -->
-      <div>
-        <div class="mb-8">
-          <div class="flex items center">
-            <div>
-              <span class="h-2 w-2 text-primary rounded-lg"></span>
+    <div class="flex justify-center">
+      <div class="relative  w-full max-w-4xl xl:max-w-6xl lg:w-screen">
+        <script src="https://fast.wistia.com/embed/medias/cmx6chswi0.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+          <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+            <div class="wistia_embed wistia_async_cmx6chswi0 seo=true videoFoam=true"
+              style="height:100%;position:relative;width:100%">
+              <div class="wistia_swatch"
+                style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                <img src="https://fast.wistia.com/embed/medias/cmx6chswi0/swatch"
+                  style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true"
+                  onload="this.parentNode.style.opacity=1;" /></div>
             </div>
-            <h3 class="text-green-400 text-sm uppercase font-semibold tracking-wide">About Us</h3>
-
           </div>
-          <h2 class="text-3xl font-bold max-w-sm font-abc mb-4">We are more than just a Design Agency.</h2>
-          <p class="text-text font-abcnormal">We are Amikoba. We design stunning graphics, build amazing websites, craft engaging videos, enhance UI/UX experiences, and develop innovative mobile apps.</p>
-        </div>
-  
-        <!-- Three Features -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          
-          <!-- Innovation Card -->
-          <div class="bg-gray-800 p-4 py-8 rounded-lg text-center">
-            <div class="text-green-400 text-5xl mb-4 flex justify-center">
-            
-          <img src="images/icons/aboutus/icon-02.svg" class="h-8 w-8" alt="Innovation at peak - Amikoba">
-          </div>
-          
-            <h4 class="text-lg font-semibold uppercase">Innovation</h4>
-          </div>
-          
-          <!-- Quality Card -->
-          <div class="bg-gray-800 p-4 py-8 rounded-lg text-center">
-            <div class="text-green-400 text-5xl mb-4 flex justify-center">
-              
-              <img src="images/icons/aboutus/icon-03.svg" class="h-8 w-8" alt="Quality Gunrateed icon - Amikoba">
-              
-          </div>
-          
-            <h4 class="text-lg font-semibold uppercase">quality</h4>
-          </div>
-          
-          <!-- Creativity Card -->
-          <div class="bg-gray-800 p-4 py-8 rounded-lg text-center">
-            <div class="text-green-400 text-5xl mb-4 flex justify-center">
-              
-              <img src="/images/icons/aboutus/icon-01.svg" class="h-8 w-8" alt="Creativity at every corner icon - Amikoba">
-          </div>
-          
-            <h4 class="text-lg font-semibold uppercase">Creativity</h4>
-          </div>
-          
         </div>
       </div>
     </div>
+
+
+    <!-- Right: About Us Section -->
+    <div>
+      <div class="mb-8">
+        <div class="flex items center">
+          <div>
+            <span class="h-2 w-2 text-primary rounded-lg"></span>
+          </div>
+          <h3 class="text-green-400 text-sm uppercase font-semibold tracking-wide">About Us</h3>
+
+        </div>
+        <h2 class="text-3xl font-bold max-w-sm font-abc mb-4">We are more than just a Design Agency.</h2>
+        <p class="text-text font-abcnormal">We are Amikoba. We design stunning graphics, build amazing websites, craft
+          engaging videos, enhance UI/UX experiences, and develop innovative mobile apps.</p>
+      </div>
+
+      <!-- Three Features -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+        <!-- Innovation Card -->
+        <div class="bg-gray-800 p-4 py-8 rounded-lg text-center">
+          <div class="text-green-400 text-5xl mb-4 flex justify-center">
+            {{ with resources.Get "images/icons/aboutus/innovation.svg" }}
+            {{ if eq .MediaType.SubType "svg" }}
+            <img src="{{ .RelPermalink }}" class="h-8 w-8" alt="Innovation at peak - Amikoba" />
+            {{ else }}
+            {{ $small := (.Resize "400x webp q80").RelPermalink }}
+            {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+            {{ $large := (.Resize "900x webp q80").RelPermalink }}
+            {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+            <img src="{{ $featuredimage }}" srcset="
+                      {{- with $small -}}, {{.}} 400w{{- end -}}
+                      {{- with $medium -}}, {{.}} 550w{{- end -}}
+                      {{- with $large -}}, {{.}} 768w{{- end -}}
+                      {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}" class="h-8 w-8"
+              alt="Innovation at peak - Amikoba" />
+            {{ end }}
+            {{ end }}
+          </div>
+          <h4 class="text-lg font-semibold uppercase">Innovation</h4>
+        </div>
+
+        <!-- Quality Card -->
+        <div class="bg-gray-800 p-4 py-8 rounded-lg text-center">
+          <div class="text-green-400 text-5xl mb-4 flex justify-center">
+            {{ with resources.Get "images/icons/aboutus/quality.svg" }}
+            {{ if eq .MediaType.SubType "svg" }}
+            <img src="{{ .RelPermalink }}" class="h-8 w-8" alt="Quality Gunrateed icon - Amikoba" />
+            {{ else }}
+            {{ $small := (.Resize "400x webp q80").RelPermalink }}
+            {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+            {{ $large := (.Resize "900x webp q80").RelPermalink }}
+            {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+            <img src="{{ $featuredimage }}" srcset="
+                      {{- with $small -}}, {{.}} 400w{{- end -}}
+                      {{- with $medium -}}, {{.}} 550w{{- end -}}
+                      {{- with $large -}}, {{.}} 768w{{- end -}}
+                      {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}" class="h-8 w-8"
+              alt="Quality Gunrateed icon - Amikoba" />
+            {{ end }}
+            {{ end }}
+          </div>
+          <h4 class="text-lg font-semibold uppercase">quality</h4>
+        </div>
+
+        <!-- Creativity Card -->
+        <div class="bg-gray-800 p-4 py-8 rounded-lg text-center">
+          <div class="text-green-400 text-5xl mb-4 flex justify-center">
+            {{ with resources.Get "images/icons/aboutus/creativity.svg" }}
+            {{ if eq .MediaType.SubType "svg" }}
+            <img src="{{ .RelPermalink }}" class="h-8 w-8" alt="Creativity at every corner icon - Amikoba" />
+            {{ else }}
+            {{ $small := (.Resize "400x webp q80").RelPermalink }}
+            {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+            {{ $large := (.Resize "900x webp q80").RelPermalink }}
+            {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+            <img src="{{ $featuredimage }}" srcset="
+                      {{- with $small -}}, {{.}} 400w{{- end -}}
+                      {{- with $medium -}}, {{.}} 550w{{- end -}}
+                      {{- with $large -}}, {{.}} 768w{{- end -}}
+                      {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}" class="h-8 w-8"
+              alt="Creativity at every corner icon - Amikoba" />
+            {{ end }}
+            {{ end }}
+          </div>
+          <h4 class="text-lg font-semibold uppercase">Creativity</h4>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </div>
-  
