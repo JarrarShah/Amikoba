@@ -5,7 +5,7 @@ draft: false
 sitemapExclude: true
 language: en
 description: ""
-keywords: "Cab Connects"
+keywords: "Amikoba"
 image: "images/og-cabconnects.png"
 images: ["images/og-cabconnects.png"]
 ---

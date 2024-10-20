@@ -2,7 +2,7 @@
 title: "CSJ Rebrand & Website Design"
 date: 2024-03-08
 draft: false
-description: ""
+description: "Rebranding and website design for CSJ, featuring a modern logo, stationery, business cards, and collateral that reflect the organization's values and mission."
 featuredImage: "images/1.png"
 image: "images/2.png"
 images: ["images/1.png", "images/2.png" , "images/3.png", "images/4.jpg" , "images/5.jpg", "images/6.jpg"]

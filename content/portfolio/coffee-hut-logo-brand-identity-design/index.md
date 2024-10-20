@@ -2,10 +2,10 @@
 title: "Coffee Hut | Logo & Brand Identity Design"
 date: 2024-03-08
 draft: false
-description: ""
-featuredImage: "images/1-coffee-hut-branding-scaled.jpg"
-image: "images/1-coffee-hut-branding-scaled.jpg"
-images: ["images/1.png", "images/1-coffee-hut-branding-scaled.jpg" , "images/2-coffee-hut-branding-scaled.jpg", "images/3-coffee-hut-branding-scaled.jpg" , "images/5-coffee-hut-branding-scaled.jpg"]
+description: "Logo and brand identity design for Coffee Hut, capturing a warm, upscale coffee experience in Abuja with a focus on quality service and inviting spaces."
+featuredImage: "images/1.jpg"
+image: "images/1.jpg"
+images: ["images/1.jpg", "images/2.jpg" , "images/3.jpg", "images/4.jpg" , "images/5.jpg", "images/6.jpg", "images/7.jpg", "images/8.jpg", "images/9.jpg", "images/10.jpg", "images/11.jpg", "images/12.jpg", "images/13.jpg", "images/14.jpg", "images/15.jpg", "images/16.jpg", "images/17.jpg", "images/18.jpg", "images/19.jpg", "images/20.jpg"]
 categories:
   - Branding
 ---
