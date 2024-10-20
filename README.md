@@ -1,4 +1,4 @@
-Amikoba is the website of [www.cab-connects.com](https://www.cab-connects.com)
+Amikoba is the website of [www.amikoba.com](https://www.amikoba.com)
 
 ## Streamlining Dispatch Services for Passenger Transportation: Welcome to Amikoba
 

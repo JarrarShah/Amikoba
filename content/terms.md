@@ -9,17 +9,17 @@ images: ["images/og-cabconnects.png"]
 ---
 
 ### BINDING EFFECT
-This agreement (“Agreement”) is a binding agreement between you (“you”) and iMobilize Ltd, trading as Amikoba, (“Amikoba,” “Company,” “we” or “us”). Amikoba is an Alias under the private limited company iMobilize Ltd. By using the site at [www.cab-connects.com](/).(the ‘Site’) or any information, materials, images, graphics, data, text, files, links, software, messages, communications, content, organization, design, compilation, magnetic translation, digital conversion, HTML, XML, Java code and other content related to the Site (collectively ‘Content’) or services provided in connection with the Site (the ‘Service’), you agree to abide by these Terms of Use, as the Company may amend them from time to time in its sole discretion. YOU AGREE THAT BY USING THE SERVICE YOU REPRESENT THAT YOU ARE AT LEAST 18 YEARS OLD AND THAT YOU ARE LEGALLY ABLE TO ENTER INTO THIS AGREEMENT.
+This agreement (“Agreement”) is a binding agreement between you (“you”) and iMobilize Ltd, trading as Amikoba, (“Amikoba,” “Company,” “we” or “us”). Amikoba is an Alias under the private limited company iMobilize Ltd. By using the site at [www.amikoba.com](/).(the ‘Site’) or any information, materials, images, graphics, data, text, files, links, software, messages, communications, content, organization, design, compilation, magnetic translation, digital conversion, HTML, XML, Java code and other content related to the Site (collectively ‘Content’) or services provided in connection with the Site (the ‘Service’), you agree to abide by these Terms of Use, as the Company may amend them from time to time in its sole discretion. YOU AGREE THAT BY USING THE SERVICE YOU REPRESENT THAT YOU ARE AT LEAST 18 YEARS OLD AND THAT YOU ARE LEGALLY ABLE TO ENTER INTO THIS AGREEMENT.
 
 
 ### REFUND POLICY / CANCELLATION
-Amikoba is committed to providing each customer with exceptional service. We want you to feel comfortable about transacting business with us. Due to the nature of our business and the accessibility of our products some of our programs have different refund and cancellation policies. Please find the complete details in the “refund policy” section of www.cab-connects.com.
+Amikoba is committed to providing each customer with exceptional service. We want you to feel comfortable about transacting business with us. Due to the nature of our business and the accessibility of our products some of our programs have different refund and cancellation policies. Please find the complete details in the “refund policy” section of www.amikoba.com.
 If you are not completely satisfied with the product you have paid for, you may contact [info@cab-connects.com]() and we will look into your request.
 
 
 
 ### PRIVACY POLICY
-The company respects your privacy and permits you to control the treatment of your personal information. A complete statement of the Company’s current privacy policy (the “Privacy Policy”) can be found on the privacy policy section on [www.cab-connects.com](/).
+The company respects your privacy and permits you to control the treatment of your personal information. A complete statement of the Company’s current privacy policy (the “Privacy Policy”) can be found on the privacy policy section on [www.amikoba.com](/).
 
 
 

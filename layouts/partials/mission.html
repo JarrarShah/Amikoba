@@ -25,7 +25,7 @@
       <!-- Service 1: Graphic Design -->
       <div class="bg-textbox p-6 rounded-lg text-center">
         <div class="flex justify-center">
-          {{ with resources.Get "images/icons/services/Icons-01.svg" }}
+          {{ with resources.Get "images/icons/services/graphic-design.svg" }}
                   {{ if eq .MediaType.SubType "svg" }}
                       <img src="{{ .RelPermalink }}" class="h-28 w-28 my-12" alt="{{ $.Params.title }}" />
                   {{ else }}
@@ -50,7 +50,7 @@
       <!-- Service 2: Website & App Design -->
       <div class="bg-textbox p-6 rounded-lg text-center">
         <div class="flex justify-center">
-          {{ with resources.Get "images/icons/services/icons-02.svg" }}
+          {{ with resources.Get "images/icons/services/web-design.svg" }}
                   {{ if eq .MediaType.SubType "svg" }}
                       <img src="{{ .RelPermalink }}" class="h-28 w-28 my-12" alt="{{ $.Params.title }}" />
                   {{ else }}
@@ -63,9 +63,11 @@
                           {{- with $medium -}}, {{.}} 550w{{- end -}}
                           {{- with $large -}}, {{.}} 768w{{- end -}}
                           {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
-                          class="h-28 w-28" alt="{{ $.Params.title }}" />
+                          class="h-28 w-28"
+                          alt="{{ $.Params.title }}" />
                   {{ end }}
               {{ end }}
+          
         </div>
         <h3 class="text-lg font-bold mb-2">Website & App Design</h3>
         <p class="text-gray-300">Our web and app design services focus on creating intuitive, and responsive designs that offer seamless user experiences.</p>
@@ -74,7 +76,7 @@
       <!-- Service 3: Video Editing -->
       <div class="bg-textbox p-6 rounded-lg text-center">
         <div class="flex justify-center mb-4">
-          {{ with resources.Get "images/icons/services/icons-03.svg" }}
+          {{ with resources.Get "images/icons/services/video-editing.svg" }}
                   {{ if eq .MediaType.SubType "svg" }}
                       <img src="{{ .RelPermalink }}" class="h-28 w-28 my-12" alt="{{ $.Params.title }}" />
                   {{ else }}
@@ -87,7 +89,7 @@
                           {{- with $medium -}}, {{.}} 550w{{- end -}}
                           {{- with $large -}}, {{.}} 768w{{- end -}}
                           {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
-                          class="h-28 w-28 overflow-hidden"
+                          class="h-28 w-28"
                           alt="{{ $.Params.title }}" />
                   {{ end }}
               {{ end }}
