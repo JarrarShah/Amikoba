@@ -32,22 +32,9 @@
           <div class="bg-gray-800 p-4 py-8 rounded-lg text-center">
             <div class="text-green-400 text-5xl mb-4 flex justify-center">
               {{ with resources.Get "images/icons/aboutus/icon-02.svg" }}
-                  {{ if eq .MediaType.SubType "svg" }}
-                      <img src="{{ .RelPermalink }}" class="h-8 w-8" alt="{{ $.Params.title }}" />
-                  {{ else }}
-                      {{ $small := (.Resize "400x webp q80").RelPermalink }}
-                      {{ $medium := (.Resize "550x webp q80").RelPermalink }}
-                      {{ $large := (.Resize "900x webp q80").RelPermalink }}
-                      {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
-                      <img src="{{ $featuredimage }}" srcset="
-                          {{- with $small -}}, {{.}} 400w{{- end -}}
-                          {{- with $medium -}}, {{.}} 550w{{- end -}}
-                          {{- with $large -}}, {{.}} 768w{{- end -}}
-                          {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
-                          class="h-8 w-8 overflow-hidden"
-                          width="100%" alt="{{ $.Params.title }}" />
-                  {{ end }}
-              {{ end }}
+          {{ $together := .RelPermalink }}
+          <img src="{{$together}}" class="h-8 w-8" alt="Innovation at peak - Amikoba">
+          {{ end }}
           </div>
           
             <h4 class="text-lg font-semibold uppercase">Innovation</h4>
@@ -57,22 +44,10 @@
           <div class="bg-gray-800 p-4 py-8 rounded-lg text-center">
             <div class="text-green-400 text-5xl mb-4 flex justify-center">
               {{ with resources.Get "images/icons/aboutus/icon-03.svg" }}
-                  {{ if eq .MediaType.SubType "svg" }}
-                      <img src="{{ .RelPermalink }}" class="h-8 w-8" alt="{{ $.Params.title }}" />
-                  {{ else }}
-                      {{ $small := (.Resize "400x webp q80").RelPermalink }}
-                      {{ $medium := (.Resize "550x webp q80").RelPermalink }}
-                      {{ $large := (.Resize "900x webp q80").RelPermalink }}
-                      {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
-                      <img src="{{ $featuredimage }}" srcset="
-                          {{- with $small -}}, {{.}} 400w{{- end -}}
-                          {{- with $medium -}}, {{.}} 550w{{- end -}}
-                          {{- with $large -}}, {{.}} 768w{{- end -}}
-                          {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
-                          class="h-8 w-8 overflow-hidden"
-                          width="100%" alt="{{ $.Params.title }}" />
-                  {{ end }}
+              {{ $together := .RelPermalink }}
+              <img src="{{$together}}" class="h-8 w-8" alt="Quality Gunrateed icon - Amikoba">
               {{ end }}
+              
           </div>
           
             <h4 class="text-lg font-semibold uppercase">quality</h4>
@@ -82,21 +57,8 @@
           <div class="bg-gray-800 p-4 py-8 rounded-lg text-center">
             <div class="text-green-400 text-5xl mb-4 flex justify-center">
               {{ with resources.Get "images/icons/aboutus/icon-01.svg" }}
-                  {{ if eq .MediaType.SubType "svg" }}
-                      <img src="{{ .RelPermalink }}" class="h-8 w-8" alt="{{ $.Params.title }}" />
-                  {{ else }}
-                      {{ $small := (.Resize "400x webp q80").RelPermalink }}
-                      {{ $medium := (.Resize "550x webp q80").RelPermalink }}
-                      {{ $large := (.Resize "900x webp q80").RelPermalink }}
-                      {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
-                      <img src="{{ $featuredimage }}" srcset="
-                          {{- with $small -}}, {{.}} 400w{{- end -}}
-                          {{- with $medium -}}, {{.}} 550w{{- end -}}
-                          {{- with $large -}}, {{.}} 768w{{- end -}}
-                          {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
-                          class="h-8 w-8 overflow-hidden"
-                          width="100%" alt="{{ $.Params.title }}" />
-                  {{ end }}
+              {{ $together := .RelPermalink }}
+              <img src="{{$together}}" class="h-8 w-8" alt="Creativity at every corner icon - Amikoba">
               {{ end }}
           </div>
           

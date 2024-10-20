@@ -4844,10 +4844,6 @@ video {
     display: none;
   }
 
-  .md\:h-80 {
-    height: 20rem;
-  }
-
   .md\:h-96 {
     height: 24rem;
   }
