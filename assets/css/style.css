@@ -2466,10 +2466,6 @@ video {
   width: 100%;
 }
 
-.w-1\/4 {
-  width: 25%;
-}
-
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -4838,10 +4834,6 @@ video {
 
   .md\:mt-5 {
     margin-top: 1.25rem;
-  }
-
-  .md\:mb-0 {
-    margin-bottom: 0px;
   }
 
   .md\:flex {
