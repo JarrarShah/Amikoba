@@ -2,7 +2,7 @@
 title: "The Support | Logo & Banner"
 date: 2024-03-08
 draft: false
-description: ""
+description: "Logo and banner designs for The Support Corner, creating a cohesive brand identity with a welcoming, supportive, and professional aesthetic."
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
 images: ["images/1.jpg", "images/2.jpg" , "images/3.jpg", "images/4.jpg" , "images/5.jpg"]

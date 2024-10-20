@@ -2,7 +2,7 @@
 title: "Urban Relish Restaurant | Logo, Menu, Signage, Clothing & Van Wrap Designs"
 date: 2024-03-08
 draft: false
-description: ""
+description: "Brand identity for Urban Slice Pizza, featuring a bold logo, vibrant packaging, signage, and a playful menu design that captures the pizzeria's energetic spirit"
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
 images: ["images/1.jpg", "images/2.jpg" , "images/3.jpg", "images/4.jpg" , "images/5.jpg", "images/6.jpg" , "images/7.jpg"]

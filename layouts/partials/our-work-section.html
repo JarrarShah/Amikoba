@@ -1,88 +1,90 @@
 <section class="max-w-7xl mx-auto py-12 px-4">
-    <section class="relative  py-12">
-        <!-- Container for alignment -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-            <!-- Subheading -->
-            <div class="relative z-20 text-left">
-                <span class="text-lg font-semibold text-primary tracking-wide">PORTFOLIO</span>
+    <div class="container mx-auto">
+        <section class="relative  py-12">
+            <!-- Container for alignment -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                <!-- Subheading -->
+                <div class="relative z-20 text-left">
+                    <span class="text-lg font-medium  font-abc text-primary tracking-widest">PORTFOLIO</span>
+                </div>
+                <!-- Foreground Text -->
+                <div class="relative z-30 text-left">
+                    <h1 class="text-4xl md:text-8xl font-bold font-abc text-white drop-shadow-2xl">OUR WORKS.</h1>
+                </div>
+                <!-- Background Text -->
+                <div class="absolute right-0 inset-y-0 flex items-center">
+                    <span class="text-6xl md:text-12xl font-light font-abc text-white opacity-10">Portfolio</span>
+                </div>
             </div>
-            <!-- Foreground Text -->
-            <div class="relative z-30 text-left">
-                <h1 class="text-8xl font-bold text-white drop-shadow-2xl">OUR WORKS.</h1>
-            </div>
-            <!-- Background Text -->
-            <div class="absolute right-0 inset-y-0 flex items-center">
-                <span class="text-8xl font-bold text-white opacity-10">Portfolio</span>
-            </div>
-        </div>
-    </section>
-    
-    
-    
-    <!-- Category Filters -->
-    <div class="flex justify-center mb-8">
-        <ul class="flex space-x-6 items-center bg-gray-800 px-6 py-3 rounded-full">
-            <!-- "All" Filter -->
-            <li class="flex items-center">
-                <span class="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <button onclick="filterSelection('all')" class="text-sm text-gray-300 hover:text-gray-100 transition-colors">
-                    ALL
-                </button>
-            </li>
-            {{ $categories := slice }}
-            {{ range where .Site.Pages "Section" "portfolio" }}
-                {{ range .Params.categories }}
-                    {{ if not (in $categories .) }}
-                        {{ $categories = $categories | append . }}
+        </section>
+        
+        
+        
+        <!-- Category Filters -->
+        <div class="flex justify-center mb-8">
+            <ul class="flex flex-wrap space-x-6 items-center bg-gray-800 px-6 py-3 rounded-full">
+                <!-- "All" Filter -->
+                <li class="flex items-center">
+                    <span class="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                    <button onclick="filterSelection('all')" class="text-sm text-gray-300 hover:text-gray-100 transition-colors">
+                        ALL
+                    </button>
+                </li>
+                {{ $categories := slice }}
+                {{ range where .Site.Pages "Section" "portfolio" }}
+                    {{ range .Params.categories }}
+                        {{ if not (in $categories .) }}
+                            {{ $categories = $categories | append . }}
+                        {{ end }}
                     {{ end }}
                 {{ end }}
-            {{ end }}
-            {{ range $categories }}
-            <li class="flex items-center">
-                <span class="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                <button onclick="filterSelection('{{ lower . | urlize }}')" class="text-sm text-gray-300 hover:text-gray-100 transition-colors">
-                    {{ . | upper }}
-                </button>
-            </li>
-            {{ end }}
-        </ul>
-    </div>
-    <!-- Portfolio Grid -->
-    <div id="portfolio-container" class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {{ range first 4 (where .Site.Pages "Section" "portfolio") }}
-            <a class="group flex flex-col portfolio-item {{ range .Params.categories }}{{ lower . | urlize }} {{ end }}" href="{{.RelPermalink}}">
-                <div class="relative rounded-lg overflow-hidden">
-                    {{ with .Resources.GetMatch .Params.featuredImage }}
-                    {{ $large := (.Resize "2000x webp q100").RelPermalink }}
-                    <img class="w-full h-64 object-cover transition-transform duration-500 transform group-hover:scale-105"
-                         src="{{ $large }}" alt="{{ .Title }}">
-                    {{ end }}
-                </div>
-                <!-- Portfolio Text Section -->
-                <div class="mt-4">
-                    <h3 class="text-lg font-semibold text-gray-100 group-hover:text-primary">{{ .Title }}</h3>
-                    <p class="mt-2 text-gray-300 text-base">
-                        {{ if .Params.summary }}{{ .Params.summary }}{{ else }}{{ .Params.description }}{{ end }}
-                    </p>
-                    <!-- Categories -->
-                    <div class="mt-4">
-                        <p class="text-sm text-gray-400">
-                            {{ if .Params.categories }} 
-                                 {{ delimit .Params.categories ", " }}
-                            {{ else }}
-                                No categories available.
-                            {{ end }}
-                        </p>
+                {{ range $categories }}
+                <li class="flex items-center">
+                    <span class="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                    <button onclick="filterSelection('{{ lower . | urlize }}')" class="text-sm text-gray-300 hover:text-gray-100 transition-colors">
+                        {{ . | upper }}
+                    </button>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        <!-- Portfolio Grid -->
+        <div id="portfolio-container" class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {{ range first 4 (where .Site.Pages "Section" "portfolio") }}
+                <a class="group flex flex-col portfolio-item {{ range .Params.categories }}{{ lower . | urlize }} {{ end }}" href="{{.RelPermalink}}">
+                    <div class="relative rounded-lg overflow-hidden">
+                        {{ with .Resources.GetMatch .Params.featuredImage }}
+                        {{ $large := (.Resize "2000x webp q100").RelPermalink }}
+                        <img class="w-full h-64 object-cover transition-transform duration-500 transform group-hover:scale-105"
+                             src="{{ $large }}" alt="{{ .Title }}">
+                        {{ end }}
                     </div>
-                </div>
+                    <!-- Portfolio Text Section -->
+                    <div class="mt-4">
+                        <h3 class="text-lg font-semibold text-gray-100 group-hover:text-primary">{{ .Title }}</h3>
+                        <p class="mt-2 text-gray-300 text-base">
+                            {{ if .Params.summary }}{{ .Params.summary }}{{ else }}{{ .Params.description }}{{ end }}
+                        </p>
+                        <!-- Categories -->
+                        <div class="mt-4">
+                            <p class="text-sm text-gray-400">
+                                {{ if .Params.categories }} 
+                                     {{ delimit .Params.categories ", " }}
+                                {{ else }}
+                                    No categories available.
+                                {{ end }}
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            {{ end }}
+        </div>
+        <!-- View All Button -->
+        <div class="flex justify-center mt-8">
+            <a href="/portfolio" class="bg-primary text-white px-6 py-4 rounded">
+                View All
             </a>
-        {{ end }}
-    </div>
-    <!-- View All Button -->
-    <div class="flex justify-center mt-8">
-        <a href="/portfolio" class="bg-primary text-white px-6 py-4 rounded">
-            View All
-        </a>
+        </div>
     </div>
 </section>
 

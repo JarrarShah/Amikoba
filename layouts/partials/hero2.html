@@ -10,12 +10,12 @@
         <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
             {{- with $medium -}}, {{.}} 1024w{{- end -}}
             {{- with $large -}}, {{.}} 1374w{{- end -}}"
-          alt="Cab Connects logo - Crafting premium signange since 1946" class="w-full h-full object-cover" alt="Video Editing Services">
+          alt="Video editing services - Amikoba" class="w-full h-full object-cover" alt="Video Editing Services">
         {{ end }}
       <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
         <div class="text-center text-white">
-          <h1 class="text-4xl md:text-6xl font-bold mb-4">Video Editing Services</h1>
-          <p class="mb-6 pb-2 md:pb-6">Bring your vision to life with our expert video editing services.</p>
+          <h1 class="text-4xl md:text-6xl font-abc font-bold mb-4">Video Editing Services</h1>
+          <p class="mb-6 pb-2 md:pb-6 px-4 md:px-0">Bring your vision to life with our expert video editing services.</p>
           <a href="#quote" class="bg-primary hover:bg-green-600 text-white py-4 px-6 rounded-lg">Get a Quote</a>
         </div>
       </div>
@@ -31,12 +31,12 @@
         <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
             {{- with $medium -}}, {{.}} 1024w{{- end -}}
             {{- with $large -}}, {{.}} 1374w{{- end -}}"
-          alt="Cab Connects logo - Crafting premium signange since 1946" class="w-full h-full object-cover" alt="Graphic Design Services">
+          alt="Amikoba logo - Crafting premium signange since 1946" class="w-full h-full object-cover" alt="Graphic Design Services">
         {{ end }}      
         <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
         <div class="text-center text-white">
-          <h2 class="text-4xl md:text-6xl max-w-4xl mx-auto font-bold mb-4">Premium <br> Graphic Design Services</h2>
-          <p class="mb-6 pb-2 md:pb-6  max-w-4xl">Bring your vision to life with our custom graphic design services—creative, bold, and designed to make an impact. Let us craft visuals that elevate your brand.</p>
+          <h2 class="text-4xl md:text-6xl max-w-4xl leading-tight mx-auto font-abc font-bold mb-4">Premium <br> Graphic Design Services</h2>
+          <p class="mb-6 pb-2 md:pb-6  max-w-4xl  px-4 md:px-0">Bring your vision to life with our custom graphic design services—creative, bold, and designed to make an impact. Let us craft visuals that elevate your brand.</p>
           <a href="#quote" class="bg-primary hover:bg-green-600 text-white py-4 px-6 rounded-lg">Get a Quote</a>
         </div>
       </div>
@@ -52,39 +52,67 @@
         <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
             {{- with $medium -}}, {{.}} 1024w{{- end -}}
             {{- with $large -}}, {{.}} 1374w{{- end -}}"
-          alt="Cab Connects logo - Crafting premium signange since 1946" class="w-full h-full object-cover" alt="Website Design Services">
+          alt="Amikoba logo - Crafting premium signange since 1946" class="w-full h-full object-cover" alt="Website Design Services">
         {{ end }}
       <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
         <div class="text-center text-white">
-          <h3 class="text-4xl md:text-6xl font-bold mb-4">Website Design</h3>
-          <p class="mb-6 pb-2 md:pb-6   max-w-4xl">Transform your online presence with stunning, user-friendly website design tailored to your brand. We create websites that not only look great but deliver results.</p>
+          <h3 class="text-4xl md:text-6xl font-abc font-abc font-bold mb-4">Website Design</h3>
+          <p class="mb-6 pb-2 md:pb-6   max-w-4xl  px-4 md:px-0">Transform your online presence with stunning, user-friendly website design tailored to your brand. We create websites that not only look great but deliver results.</p>
           <a href="#quote" class="bg-primary hover:bg-green-600 text-white py-4 px-6 rounded-lg">Get a Quote</a>
         </div>
       </div>
     </div>
+    <!-- Slider controls -->
+  <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+      </svg>
+      <span class="sr-only">Previous</span>
+    </span>
+  </button>
+  
+  <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+      </svg>
+      <span class="sr-only">Next</span>
+    </span>
+  </button>
   </div>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-        var slider = new KeenSlider(".keen-slider", {
-            loop: true,
-            slidesPerView: 1,
-            mode: "snap",
-            controls: true,
-            breakpoints: {
-                "(min-width: 768px)": {
-                    slidesPerView: 1,
-                },
+    var slider = new KeenSlider(".keen-slider", {
+        loop: true,
+        slidesPerView: 1,
+        mode: "snap",
+        breakpoints: {
+            "(min-width: 768px)": {
+                slidesPerView: 1,
             },
-        });
-
-        function autoplay() {
-            setInterval(() => {
-                slider.next();
-            }, 3000); // Change slide every 3 seconds
-        }
-
-        autoplay();
+        },
     });
+
+    // Autoplay function (already present)
+    function autoplay() {
+        setInterval(() => {
+            slider.next();
+        }, 3000); // Change slide every 3 seconds
+    }
+
+    autoplay();
+
+    // Add event listeners for the controls
+    document.querySelector("[data-carousel-prev]").addEventListener("click", () => {
+        slider.prev();
+    });
+
+    document.querySelector("[data-carousel-next]").addEventListener("click", () => {
+        slider.next();
+    });
+});
+
 </script>
 
     

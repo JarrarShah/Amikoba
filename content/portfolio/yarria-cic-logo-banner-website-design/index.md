@@ -2,7 +2,7 @@
 title: "Yarria CIC Logo, Banner & Website Design"
 date: 2024-03-08
 draft: false
-description: ""
+description: "Comprehensive design for Yarira CIC, a dynamic logo, engaging banner, and user-friendly website that reflects the organization's mission & community focus."
 featuredImage: "images/1.jpg"
 image: "images/1.jpg"
 images: ["images/1.jpg", "images/2.jpg" , "images/3.jpg", "images/4.jpg" , "images/5.jpg", "images/6.jpg", "images/7.jpg", "images/8.jpg", "images/9.jpg", "images/10.jpg", "images/11.jpg"]

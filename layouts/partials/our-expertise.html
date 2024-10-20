@@ -30,15 +30,15 @@
     });
     observer.observe($el);
   }" 
-  class="bg-gray-900 text-white py-16"
+  class="bg-dark text-white py-16"
 >
-<div class="container mx-auto px-4">
+<div class="container mx-auto px-4 md:px-16">
   <div class="flex flex-wrap">
     <!-- Left Content -->
-    <div class="w-full lg:w-1/2 mb-8 lg:mb-0 pr-0 md:pr-20">
-      <h2 class="text-green-500 font-semibold text-sm mb-2">OUR EXPERTISE</h2>
-      <h1 class="text-4xl font-bold mb-4">Growing businesses through digital solutions</h1>
-      <p class="mb-6 text-gray-300">
+    <div class="w-full lg:w-1/2 w-max-4xl mb-8 lg:mb-0 pr-0 md:pr-20">
+      <p class="text-white font-abc tracking-wider font-semibold text-sm mb-2">OUR EXPERTISE</p>
+      <h1 class="text-4xl font-bold leading-tight font-abc mb-4">Growing businesses through digital solutions</h1>
+      <p class="mb-6 text-text font-abc">
         With expertise spanning across web design, mobile app development, UX/UI design, and brand identity, 
         we blend creativity with cutting-edge technology to deliver tailored solutions that resonate with your audience.
       </p>
@@ -62,7 +62,7 @@
     </div>
 
     <!-- Right Content (Images) -->
-    <div class="w-full lg:w-1/2 grid grid-cols-2 gap-x-6 gap-y-2">
+    <div class="w-full items-center lg:w-1/2 grid grid-cols-2 gap-x-6 gap-y-2">
       <div class="col-span">
         {{ with resources.Get "images/landingpage/1.png" }}
         {{ $small := (.Resize "400x webp q80").RelPermalink }}
@@ -74,7 +74,7 @@
           {{- with $medium -}}, {{.}} 550w{{- end -}}
           {{- with $large -}}, {{.}} 768w{{- end -}}
           {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
-            class="rounded-lg w-auto"
+            class="rounded-2xl h-96 w-auto"
             alt="Our Expertise makes us the best digital marketing company in the UK" />
         {{ end }}
       </div>
@@ -119,7 +119,7 @@
           {{- with $medium -}}, {{.}} 550w{{- end -}}
           {{- with $large -}}, {{.}} 768w{{- end -}}
           {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
-            class="rounded-lg w-auto"
+            class="rounded-lg w-auto h-96"
             alt="Our Expertise makes us the best digital marketing company in the UK" />
         {{ end }}
       </div>

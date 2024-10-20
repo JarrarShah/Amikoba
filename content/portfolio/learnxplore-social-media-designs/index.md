@@ -2,7 +2,7 @@
 title: "LearnXplore | Social Media Designs"
 date: 2024-03-08
 draft: false
-description: ""
+description: "Cohesive logo and banner designs for The Support Corner, reflecting a supportive and approachable brand identity with modern aesthetics."
 featuredImage: "images/1.jpg"
 image: "images/2.jpg"
 images: ["images/1.jpg", "images/2.jpg" , "images/3.jpg", "images/4.jpg" , "images/5.jpg", "images/6.jpg", "images/7.jpg", "images/8.jpg", "images/9.jpg", "images/10.jpg"]
